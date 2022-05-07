@@ -1,0 +1,69 @@
+.form-label{
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+.form-error{
+    -fx-text-fill: red;
+}
+
+.primaryBtn{
+    -fx-background-color: black;
+    -fx-border-radius: 0;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-font-size: 16;
+}
+
+.primaryBtn:hover{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+
+.secondaryBtn{
+    -fx-background-color: transparent;
+    -fx-border-radius: 0;
+    -fx-text-fill: black;
+    -fx-border-color: lightgrey;
+    -fx-border-width: 2;
+    -fx-font-size: 16;
+}
+
+.secondaryBtn:hover{
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+}
+
+TextField, TextArea, DatePicker, #vehiclesTable{
+    -fx-font-size: 16;
+}
+
+#btnContainer{
+    -fx-font-size: 13;
+}
+
+
+.del-btn{
+    -fx-background-color: crimson;
+    -fx-text-fill: white;
+    -fx-border-color: crimson;
+    -fx-border-width: 2;
+}
+
+.edit-btn{
+    -fx-background-color: navy;
+    -fx-text-fill: white;
+    -fx-border-color: navy;
+    -fx-border-width: 2;
+}
+
+.del-btn:hover{
+    -fx-background-color: transparent;
+    -fx-text-fill: crimson;
+}
+
+.edit-btn:hover{
+    -fx-background-color: transparent;
+    -fx-text-fill: navy;
+}

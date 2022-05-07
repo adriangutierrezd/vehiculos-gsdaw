@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prog_10.prog_10_alt_fx.VehicleApplicationController">
+    <children>
+        <ToolBar prefHeight="40.0" prefWidth="1100.0" style="-fx-background-color: transparent;">
+            <items>
+                <Button styleClass="secondaryBtn" mnemonicParsing="false" onAction="#toSceneMain" text="&lt; Atrás" />
+            </items>
+        </ToolBar>
+        <AnchorPane layoutX="100.0" layoutY="59.0" prefHeight="700.0" prefWidth="900.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+            <children>
+                <Label layoutX="1.0" prefHeight="17.0" prefWidth="116.0" styleClass="form-label" text="Marca" />
+                <TextField fx:id="marca" layoutY="24.0" prefHeight="35.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="marcaError" layoutX="175.0" layoutY="18.0" wrappingWidth="220.0" />
+                <Label layoutX="1.0" layoutY="77.0" styleClass="form-label" text="Matrícula" />
+                <TextField fx:id="matricula" disable="true" layoutX="1.0" layoutY="101.0" prefHeight="35.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="matriculaError" layoutX="175.0" layoutY="93.0" wrappingWidth="220.0" />
+                <Label layoutX="1.0" layoutY="151.0" prefHeight="17.0" prefWidth="99.0" styleClass="form-label" text="Kilometraje" />
+                <TextField fx:id="kilometros" layoutY="177.0" prefHeight="35.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="kilometrosError" layoutX="175.0" layoutY="168.0" wrappingWidth="220.0" />
+                <Label layoutY="222.0" prefHeight="17.0" prefWidth="203.0" styleClass="form-label" text="Fecha matriculación" />
+                <DatePicker fx:id="fechaMat" layoutY="245.0" prefHeight="35.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="fechaError" layoutX="175.0" layoutY="237.0" wrappingWidth="220.0" />
+                <Label layoutY="288.0" styleClass="form-label" text="Precio" />
+                <TextField fx:id="precio" layoutY="314.0" prefHeight="35.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="precioError" layoutX="175.0" layoutY="304.0" wrappingWidth="220.0" />
+                <Label layoutX="1.0" layoutY="364.0" styleClass="form-label" text="Nombre propietario" />
+                <TextField fx:id="nombre" layoutY="388.0" prefHeight="35.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="nombreError" layoutX="175.0" layoutY="379.0" wrappingWidth="220.0" />
+                <Label layoutY="438.0" styleClass="form-label" text="NIF" />
+                <TextField fx:id="NIF" layoutY="462.0" prefHeight="35.0" prefWidth="906.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="NIFError" layoutX="175.0" layoutY="452.0" wrappingWidth="220.0" />
+                <Label layoutY="513.0" prefHeight="27.0" prefWidth="106.0" styleClass="form-label" text="Descripción" />
+                <TextArea fx:id="descripcion" layoutY="542.0" prefHeight="84.0" prefWidth="900.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                <Text fx:id="descripcionError" layoutX="175.0" layoutY="531.0" wrappingWidth="220.0" />
+                <Button layoutX="405.0" layoutY="655.0" mnemonicParsing="false" styleClass="primaryBtn" onAction="#addVehicle" text="Guardar" />
+            </children></AnchorPane>
+    </children>
+</AnchorPane>
